@@ -2,6 +2,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
+  redirect,
   RouterProvider,
 } from "react-router-dom";
 import "./css/index.css";
@@ -15,7 +16,6 @@ import Links from "./routes/links";
 const router = createBrowserRouter([
   {
     path: "/",
-    redirect: '/about-me',
     element: <Root/>,
     errorElement: <ErrorPage/>,
     children: [

@@ -1,13 +1,29 @@
-import {Outlet, Link, useLoaderData} from "react-router-dom";
+import React, {useState} from 'react';
+import WelcomeScreen from './welcome';
+import {Outlet, Link, useLoaderData, useNavigate} from "react-router-dom";
 
 
 
 
 
 export default function Root() {
+
+    const [welcomeShown, setWelcomeShown] = useState(true);
+    const navigate = useNavigate();
+
+    const handleEnterSite = () => {
+        setWelcomeShown(false);
+        navigate('/about-me');
+    };
+
+
     return (
       <div id="root">
-        <div id="navbar">
+        {welcomeShown ? (
+            <WelcomeScreen onEnter={handleEnterSite} />
+        ) : (
+            <>
+                <div id="navbar">
             <ul id="title">
                 <h1>Cason's</h1>
                 <h2>Coding Portfolio</h2>
@@ -32,6 +48,8 @@ export default function Root() {
         <div>
             <Outlet/>
         </div>
+            </>
+        )}
       </div>
     );
   }

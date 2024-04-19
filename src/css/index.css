@@ -21,7 +21,7 @@
   text-align: center;
   border-top-right-radius: 5%;
   border-bottom-left-radius: 5%;
-
+  background: linear-gradient(to top, #56a3e2 0%, #FFFFFF 45%);
 }
 
 ul {
@@ -35,15 +35,24 @@ ul li {
   margin-bottom: 10%;
   text-decoration: none;
   color: black;
-  border-radius: 7%;
-  transition: .3s;
+  border-radius: 7%; /* Adjusted for visual aesthetics */
+  transition: all 0.3s ease; /* Ensure transitions affect all properties smoothly */
   padding-left: 5px;
   padding-right: 5px;
+  cursor: pointer; /* Makes it clear that the item is interactive */
+  background-color: transparent; /* Starting background color */
+  box-shadow: none; /* No shadow initially */
 }
 
 ul li:hover {
-  background-color: #FF7F50;
+  background-color: #56a3e2; /* Blue color from the welcome screen */
+  color: white; /* Text color changes to white for better contrast */
+  padding-left: 10px; /* Slightly increase padding for a dynamic effect */
+  padding-right: 10px; /* Synchronously with left padding */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
+
 
 ul li a {
   text-decoration: none;
