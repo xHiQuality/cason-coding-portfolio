@@ -22,6 +22,7 @@
   border-top-right-radius: 5%;
   border-bottom-left-radius: 5%;
   background: linear-gradient(to top, #56a3e2 0%, #FFFFFF 45%);
+  position: inherit;
 }
 
 ul {

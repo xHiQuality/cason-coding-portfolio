@@ -13,11 +13,11 @@ import Resume from "./routes/resume";
 import Projects from "./routes/projects";
 import Links from "./routes/links";
 import Blog from "./routes/blog";
-import TestProject from "./routes/testProject";
-import TestProject2 from "./routes/testProject2";
-import TestProject3 from "./routes/testProject3";
-import TestProject4 from "./routes/testProject4";
-import TestProject5 from "./routes/testProject5";
+import TestProject from "./routes/projects/testProject";
+import TestProject2 from "./routes/projects/testProject2";
+import TestProject3 from "./routes/projects/testProject3";
+import TestProject4 from "./routes/projects/testProject4";
+import TestProject5 from "./routes/projects/testProject5";
 
 const router = createBrowserRouter([
   {

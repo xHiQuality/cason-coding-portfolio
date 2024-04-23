@@ -25,14 +25,14 @@
 #what-i-do {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: right;
     align-items: center;
     flex-wrap: wrap; /* Wrap items on smaller screens */
 }
 
 #linksSection h2, #linksSection h3 {
     text-align: center;
-    margin: 10px 0;
+    margin: 10px 10px;
 }
 
 #linksSection img, #what-i-do img {
@@ -40,6 +40,8 @@
     max-width: 100px; /* Max width to ensure images are not too large */
     transition: background-color 0.3s; /* Smooth transition for hover */
 }
+
+
 
 #linksSection img:hover, #what-i-do img:hover {
     background-color: #e9ecf0;

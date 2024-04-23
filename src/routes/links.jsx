@@ -23,18 +23,11 @@ export default function Links() {
                 <h1>Involvement</h1>
                 <div id='what-i-do'>
                    
-                   <div>
+                   <div id='athenscampus'>
                     <h3>Athens Campus Ministry</h3>
                     <a href='https://uga.campuslabs.com/engage/organization/athens_campus_ministry' target='_blank'><img src={ministry} alt='Athens Campus Ministry' /></a>
                    </div>
-                    
-                    <div>
-                    <h3>
-                        Association of Computing Machinery (ACM)
-                    </h3>
-                    <a href='https://acm.uga.edu/' target='_blank'><img src={acm} alt='Assocation of Computing Machinery' /></a>
-                    </div>
-                    <div>
+                    <div id='osp'>
                     <h3>Open Source Club</h3>
                     <a href='https://github.com/acm-uga/ACM-OSP-Fall-2023' target='_blank'><img src={osp} alt='Open Source Club' /></a>
                     </div>
