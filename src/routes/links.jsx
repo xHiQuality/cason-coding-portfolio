@@ -12,14 +12,19 @@ export default function Links() {
         <div className="linksPage">
             <h1 id="titleLinks">Social Media & Important Links</h1>
             <div id="linksSection">
+                <div id='socials'>
                 <h2>LinkedIn</h2>
-                <a href='https://www.linkedin.com/in/cason-pittman/' target='_blank'><img src={LinkedIn} alt='LinkedIn' /></a>
+                
                 <h2>GitHub</h2>
+                
+                <h2>Email</h2>     
+                </div>
+                <div id='linkSocials'>
+                <a href='https://www.linkedin.com/in/cason-pittman/' target='_blank'><img src={LinkedIn} alt='LinkedIn' /></a>
                 <a href='https://github.com/xHiQuality' target='_blank'><img src={github} alt='Github' /></a>
-                <h2>Email</h2>
-                <img src={email} alt='email' />
-                <h2>Phone</h2>
-                <h3>770-598-1550</h3>
+                <a href='mailto:casonjpittman@gmail.com'><img src={email} alt='email' /></a>
+               
+                </div>
                 <h1>Involvement</h1>
                 <div id='what-i-do'>
                    

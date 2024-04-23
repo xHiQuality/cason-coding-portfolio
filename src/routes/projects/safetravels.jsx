@@ -19,27 +19,30 @@ export default function SafeTravels() {
             me and the group were able to complete a functioning app, minus a few bugs that couldn't be sorted out within the 48 hours. We used web APIs to access various facts and safety concerns for countries around the world.
             A demo of our app can be found below.
             </p>
-            //TODO FINISH PROJECT ENTRIES
-            <h4>Subsection Header</h4>
+            
+            <h4>Learning Flutter</h4>
             <p>
-            this is a very long paragraph about the test project with more detail and stuff, How big could this go, idk if i keep typing will it reach the edge of the screen I will keep typing
+            This project was my first ever experience in mobile development as well as using Flutter. I hadn't at this time done any frontend work including web dev.
+            Understanding the concept of placing components within components to create a DOM tree was valuable knowledge that I retained from this project. 
             </p>
         </div>
         <div id="codeSection">
-            <h2>Code Header</h2>
+            <h2>Some Frontend Code</h2>
             <div className="codeBox">
-            <FileInput filepath="test1.txt"/>
+            <FileInput filepath="safetravelsfrontend.txt"/>
             </div>
-            <p>light description of code and describing it's functionality</p>
-            <h2>Another Code Header</h2>
+            <p>This code shows the creation of the homepage of the mobile app</p>
+            <h2>Some Backend Code</h2>
             <div className="codeBox">
-            <FileInput filepath="test2.txt"/>
+            <FileInput filepath="safetravelsbackend.txt"/>
             </div>
-            <p>light description of code and describing it's functionality</p>
+            <p>
+            Logic for parsing the API and gathering required data
+            </p>
         </div>
         <div>
         <a className="demo"  href="https://youtu.be/3XROlXdFC6M?si=F9Dg8Fcu5DTn9_DX" target="_blank">Demo</a>
-            <a href="https://github.com/xHiQuality/portfolio-vite" alt="link to my github" target="_blank">View the Repository</a>
+            <a href="https://github.com/MiguelDelao/Safe-Travels" alt="link to github repo" target="_blank">View the Repository</a>
         </div>
     </div>
     )

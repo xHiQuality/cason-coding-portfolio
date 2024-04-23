@@ -1,0 +1,22 @@
+const ProjectCard = (props) => {
+
+
+
+    return (
+        <div className="projectCard">
+            <div className="titleSection">
+                <h1>{props.title}</h1>
+                <h3>{props.class}</h3>
+            </div>
+            <div className="codeSection">
+                <h4>Languages & Frameworks</h4>
+                <code>{props.code}</code>
+            </div>
+            <div className="descriptionSection">
+                <p>{props.description}</p>
+            </div>
+            <Link to={props.link}>VIEW PROJECT</Link>
+            
+        </div>
+    )
+}

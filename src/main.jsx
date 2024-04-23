@@ -2,7 +2,6 @@ import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
-  redirect,
   RouterProvider,
 } from "react-router-dom";
 import "./css/index.css";
@@ -14,10 +13,11 @@ import Projects from "./routes/projects";
 import Links from "./routes/links";
 import Blog from "./routes/blog";
 import ACMOSP2023 from "./routes/projects/acmOSP2023";
-import TestProject4 from "./routes/projects/testProject4";
-import TestProject5 from "./routes/projects/testProject5";
 import RedditClone from "./routes/projects/redditClone";
 import SafeTravels from "./routes/projects/safetravels";
+import RelationalAlgebra from "./routes/projects/relationalAlgebra";
+import Portfolio from "./routes/projects/portfolio";
+import WorkoutTracker from "./routes/projects/workoutTracker";
 
 const router = createBrowserRouter([
   {
@@ -50,12 +50,16 @@ const router = createBrowserRouter([
                 element: <SafeTravels />
               },
               {
-                path: "/projects/test4",
-                element: <TestProject4/>
+                path: "/projects/relational-algebra",
+                element: <RelationalAlgebra/>
               },
               {
-                path: "/projects/test5",
-                element: <TestProject5/>
+                path: "/projects/portfolio",
+                element: <Portfolio/>
+              },
+              {
+                path: "/projects/workout",
+                element: <WorkoutTracker/>
               }
             ]
           },
