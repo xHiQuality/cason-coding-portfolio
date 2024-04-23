@@ -1,0 +1,84 @@
+.projectPage {
+    display: flex;
+    justify-content: left;
+}
+
+#outlet {
+    margin-left: 200px;
+    background-color: #0056b3;
+    height: 100vh;
+    margin-right: 10px;
+}
+
+.projectColumn {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150%;  
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px auto;  
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.projectCard:hover {
+    transform: translateY(-10px);
+}
+
+.titleSection {
+    align-self: flex-start;
+    text-align: left;
+    width: 100%;
+}
+
+.titleSection h1 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.titleSection h3 {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.codeSection {
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.codeSection code {
+    font-family: 'Courier New', monospace;
+    color: #D6336C;
+}
+
+.descriptionSection p {
+    text-align: center;
+    padding: 5px 20px;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.projectCard a {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.projectCard a:hover {
+    background-color: #0056b3;
+}
+

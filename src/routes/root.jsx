@@ -41,6 +41,9 @@ export default function Root() {
                     <Link to ={'/projects'}><h1>Projects</h1></Link>
                 </li>
                 <li>
+                    <Link to ={'/blog'}><h1>Blog</h1></Link>
+                </li>
+                <li>
                     <Link to ={'/links'}><h1>Links</h1></Link>
                 </li>
             </ul>
