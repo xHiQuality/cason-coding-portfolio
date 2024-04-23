@@ -21,6 +21,7 @@ import WorkoutTracker from "./routes/projects/workoutTracker";
 
 const router = createBrowserRouter([
   {
+    basename: "/cason-coding-portfolio/",
     path: "/",
     element: <Root/>,
     errorElement: <ErrorPage/>,
