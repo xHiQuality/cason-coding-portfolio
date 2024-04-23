@@ -6,9 +6,10 @@ export default function Projects() {
     return (
         <div className="projectPage">
         <div className="projectColumn">
-            <ProjectCard title="Test" class="class" code="code snippet" description="description" link='/projects/test' />
-            <ProjectCard title="Test2" class="class2" code="code snippet 2" description="description2" link='/projects/test2'/>
-            <ProjectCard title="Test3" class="class3" code="code snippet 3" description="description3" link='/projects/test3'/>
+            <h1>Projects</h1>
+            <ProjectCard title="UGA Bus App &#128054;&#128652;" class="ACM Open Source Club" code="Kotlin(Jetpack Compose),Java Spring Boot, MySQL" description="I lead the Frontend of this OSP where we created attempted to create a better version of the UGA Bus App!" link='/projects/acm-osp-2023' />
+            <ProjectCard title="Reddit&#174;&#65039; Clone 📱" class="Software Engineering (CSCI 4050)" code="React.js, Node.js, MySQL" description="I worked with 4 other students to create a Reddit Clone for our semester long project. I was responsible for backend & database" link='/projects/reddit-clone'/>
+            <ProjectCard title="SafeTravels &#9992;&#65039;" class="UGA Hackathon 8" code="Dart(Flutter)" description="This was my submission to UGA Hacks 8, created in 48 hours with 3 other hackers. APIs,mobile dev, backend logic." link='/projects/safetravels'/>
             <ProjectCard title="Test2" class="class4" code="code snippet 4" description="description4" link='/projects/test4'/>
             <ProjectCard title="Test2" class="class5" code="code snippet 5" description="description5" link='/projects/test5'/>
 
@@ -31,7 +32,7 @@ const ProjectCard = (props) => {
                 <h3>{props.class}</h3>
             </div>
             <div className="codeSection">
-                <h4>Highlighted Code:</h4>
+                <h4>Languages & Frameworks</h4>
                 <code>{props.code}</code>
             </div>
             <div className="descriptionSection">

@@ -11,7 +11,7 @@
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
-    background: linear-gradient(to top, #56a3e2 0%, #FFFFFF 50%); /* Gradient that transitions to white */
+     /* Gradient that transitions to white */
 }
 
 #titleAbout {
@@ -22,9 +22,9 @@
 
 #general-info {
     flex: 1;
-    flex-shrink: false;
     padding-right: 10%;
     padding-left: 10%;
+    margin-bottom: 0;
 }
 
 #text-about-me {
@@ -40,7 +40,8 @@
 @media (max-width: 1440px) {
     .aboutme {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
+        background: white;
     }
 
     #text-about-me, #image-container {

@@ -1,10 +1,12 @@
 #projectHighlight {
-    height: 100%;
     position: absolute;
     background-color: #f5f5f5;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     font-family: 'Courier New', monospace;
-    padding: 0 10px 0 10px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    margin-right: 2%;
+    max-width: 40vw; /* Restricts width to 30% of the viewport width */
 }
 
 #codeSection {
@@ -12,13 +14,35 @@
     color: #FF7F50;
 }
 
-#codeSection code {
-    font-family: 'Courier New', monospace;
-    color: brown;
+.codeBox {
     background-color: #eeeaea;
+    border: 1px solid #dad6d6;
+    border-radius: 7px;
+    padding: 5px;
+    overflow-x: scroll; /* Prevents content from spilling out */
+    word-wrap: break-word; /* Ensures long words do not cause overflow */
+    white-space: pre-wrap; /* Maintains whitespace formatting but wraps text */
 }
 
-#codeSection p {
+#codeSection code, #codeSection p {
     font-family: 'Courier New', monospace;
     color: brown;
+    overflow-wrap: break-word; /* Allows the text to break and wrap to prevent overflow */
 }
+
+#projectHighlight a {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+#projectHighlight a:hover {
+    background-color: #0056b3;
+}
+
+
+

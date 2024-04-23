@@ -13,11 +13,11 @@ import Resume from "./routes/resume";
 import Projects from "./routes/projects";
 import Links from "./routes/links";
 import Blog from "./routes/blog";
-import TestProject from "./routes/projects/testProject";
-import TestProject2 from "./routes/projects/testProject2";
-import TestProject3 from "./routes/projects/testProject3";
+import ACMOSP2023 from "./routes/projects/acmOSP2023";
 import TestProject4 from "./routes/projects/testProject4";
 import TestProject5 from "./routes/projects/testProject5";
+import RedditClone from "./routes/projects/redditClone";
+import SafeTravels from "./routes/projects/safetravels";
 
 const router = createBrowserRouter([
   {
@@ -38,16 +38,16 @@ const router = createBrowserRouter([
             element: <Projects/>,
             children: [
               {
-                path: "/projects/test",
-                element: <TestProject />
+                path: "/projects/acm-osp-2023",
+                element: <ACMOSP2023 />
               },
               {
-                path: "/projects/test2",
-                element: <TestProject2/>
+                path: "/projects/reddit-clone",
+                element: <RedditClone/>
               },
               {
-                path: "/projects/test3",
-                element: <TestProject3 />
+                path: "/projects/safetravels",
+                element: <SafeTravels />
               },
               {
                 path: "/projects/test4",

@@ -17,7 +17,7 @@ export default function AboutMe() {
             My academic journey is highlighted by my active participation in the Association for Computing Machinery (ACM) club, where I've served as the Community Engagement Chair and led an open-source initiative to develop an improved UGA Bus App. This project not only enhanced my leadership skills but also deepened my expertise in front-end development using Jetpack Compose and project management. 
             </p>
             <p>
-            I'm proficient in a variety of programming languages including Java, JavaScript, and React, and I'm familiar with tools like Android Studio, VS Code, Eclipse, MySQL Workbench and Git. My project experience is diverse, ranging from creating a relational algebra engine in Java to developing a calorie tracking app using React.js and MongoDB. Each project has bolstered my understanding of critical concepts like API integration, data structures, and user interface design.
+            I'm proficient in a variety of programming languages including Java, JavaScript, and React, and I'm familiar with tools like Android Studio, VS Code, Eclipse, MySQL Workbench and Git. My project experience is diverse, ranging from creating a relational algebra engine in Java to developing this website using React.js and MySQL. Each project has bolstered my understanding of critical concepts like API integration, data structures, and user interface design.
             </p>
             <p>
             Outside of coding, I've demonstrated strong leadership through organizing numerous community events with ACM, aiming to build a stronger network among computing peers at UGA. I also have led a college ministry group, where I have helped other students along their walk of faith. 

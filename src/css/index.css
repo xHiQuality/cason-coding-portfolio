@@ -21,7 +21,8 @@
   text-align: center;
   border-top-right-radius: 5%;
   border-bottom-left-radius: 5%;
-  background: linear-gradient(to top, #56a3e2 0%, #FFFFFF 45%);
+  border: #e3e3e4 solid 1px;
+  background-color: #f5f5f5;
   position: inherit;
 }
 

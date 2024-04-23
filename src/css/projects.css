@@ -1,13 +1,17 @@
 .projectPage {
     display: flex;
     justify-content: left;
+    height: 100%;
 }
 
 #outlet {
+    flex-grow: 1;
     margin-left: 200px;
     background-color: #0056b3;
     height: 100vh;
+    overflow-y: auto;
     margin-right: 10px;
+    
 }
 
 .projectColumn {
@@ -20,7 +24,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 150%;  
+    width: 150%;
+    max-width: 350px;  
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin: 20px auto;  
     padding: 20px;
@@ -50,7 +55,7 @@
 }
 
 .codeSection {
-    width: 100%;
+    
     background-color: #f4f4f4;
     padding: 10px;
     border-radius: 5px;
@@ -82,3 +87,8 @@
     background-color: #0056b3;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
