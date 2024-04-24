@@ -1,5 +1,5 @@
 import '../css/resume.css';
-import resume from '../images/CasonPittmanCSResume2024.pdf';
+import resume from '/CasonPittmanCSResume2024.pdf';
 import { Link } from 'react-router-dom';
 
 
