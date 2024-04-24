@@ -18,6 +18,7 @@ import SafeTravels from "./routes/projects/safetravels";
 import RelationalAlgebra from "./routes/projects/relationalAlgebra";
 import Portfolio from "./routes/projects/portfolio";
 import WorkoutTracker from "./routes/projects/workoutTracker";
+import Notes from "./routes/notes";
 
 const router = createBrowserRouter([
   {
@@ -70,6 +71,10 @@ const router = createBrowserRouter([
           {
             path: "/cason-coding-portfolio/links",
             element: <Links/>
+          },
+          {
+            path: "/cason-coding-portfolio/Notes",
+            element: <Notes />
           }
         
     ],

@@ -1,10 +1,11 @@
 import '../css/links.css';
 import LinkedIn from '../images/icons/linkedin.svg';
-import acm from '../images/icons/acm.svg';
 import github from '../images/icons/github.svg';
 import email from '../images/icons/email.svg';
 import ministry from '../images/icons/ministry.svg';
 import osp from '../images/icons/osp.svg';
+import discord from '../images/icons/discord.svg';
+import instagram from '../images/icons/instagram.svg';
 
 
 export default function Links() {
@@ -16,12 +17,18 @@ export default function Links() {
                 <h2>LinkedIn</h2>
                 
                 <h2>GitHub</h2>
+
+                <h2>Discord</h2>
+
+                <h2>Instagram</h2>
                 
-                <h2>Email</h2>     
+                <h2>Email</h2>  
                 </div>
                 <div id='linkSocials'>
                 <a href='https://www.linkedin.com/in/cason-pittman/' target='_blank'><img src={LinkedIn} alt='LinkedIn' /></a>
                 <a href='https://github.com/xHiQuality' target='_blank'><img src={github} alt='Github' /></a>
+                <a href='https://discordapp.com/users/xhiquality' target='_blank'><img src={discord} alt='Github' /></a>
+                <a href='https://www.instagram.com/cason_pittman/' target='_blank'><img src={instagram} alt='Github' /></a>
                 <a href='mailto:casonjpittman@gmail.com'><img src={email} alt='email' /></a>
                
                 </div>
@@ -37,6 +44,13 @@ export default function Links() {
                     <a href='https://github.com/acm-uga/ACM-OSP-Fall-2023' target='_blank'><img src={osp} alt='Open Source Club' /></a>
                     </div>
                 </div>
+                <h1>
+                    Thanks for stopping by!
+                </h1>
+                <p>
+                    Please feel free to connect with me on the various socials, and shoot me an email if you have any questions!
+
+                </p>
             </div>
         </div>
     )

@@ -46,6 +46,9 @@ export default function Root() {
                 <li>
                     <Link to ={'/cason-coding-portfolio/links'}><h1>Links</h1></Link>
                 </li>
+                <li>
+                    <Link to ={'/cason-coding-portfolio/notes'}><h1>Notes</h1></Link>
+                </li>
             </ul>
         </div>
         <div>

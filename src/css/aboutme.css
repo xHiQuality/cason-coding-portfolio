@@ -63,7 +63,6 @@
 #image-container img {
     height: auto;
     width: 100%;
-    display: block;
     vertical-align: bottom;
 }
 
