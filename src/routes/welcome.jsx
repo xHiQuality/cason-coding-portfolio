@@ -8,6 +8,7 @@ export default function WelcomeScreen({ onEnter }) {
       <h3>A coding e-Portfolio</h3>
       <button onClick={onEnter}>Enter Site</button>
       <p>This website showcases my resume, projects I've worked on, and more about me.</p>
+      <h2>IMPORTANT: Please do not refresh as it will send you to a 404 page due to how GitHub Pages handles SPAs</h2>
     </div>
   );
 }
