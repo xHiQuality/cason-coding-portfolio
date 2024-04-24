@@ -12,6 +12,6 @@ Currently, two official plugins are available:
 
 Welcome to my portfolio!! This is your one stop shop for all things Cason! Feel free to message me through email (provided in website)!
 
-<mark>IMPORTANT</mark>
-Currently due to how SPAs are handled by Github Pages, refreshing the page will send you to an 404 error not found with no link back to site. Please do <mark>NOT</mark> refresh!
+<span style="background-color: #FFFF00">IMPORTANT</span>
+Currently due to how SPAs are handled by Github Pages, refreshing the page will send you to an 404 error not found with no link back to site. Please do <span style="background-color: #FFFF00">NOT</span> refresh!
 If you do, you will simply have to reenter the site home url
