@@ -31,12 +31,12 @@ export default function RedditClone() {
             <div id="codeSection">
                 <h2>Some Backend Code</h2>
                 <div className="codeBox">
-                <FileInput filepath="backendReddit.txt"/>
+                <FileInput filepath="cason-coding-portfolio/backendReddit.txt"/>
                 </div>
                 <p>Code showcases how to create and add a user to database. As well as method for finding all users.</p>
                 <h2>Some Frontend Code</h2>
                 <div className="codeBox">
-                <FileInput filepath="frontendReddit.txt"/>
+                <FileInput filepath="cason-coding-portfolio/frontendReddit.txt"/>
                 </div>
                 <p>Code for SignUp/Login Prompt for user</p>
             </div>

@@ -25,12 +25,12 @@ export default function ACMOSP2023() {
             <div id="codeSection">
                 <h2>Some Frontend Code</h2>
                 <div className="codeBox">
-                <FileInput filepath="kotlinosp.txt"/>
+                <FileInput filepath="cason-coding-portfolio/kotlinosp.txt"/>
                 </div>
                 <p>One of our members with guidance from me was able to put together this nav bar which serves as a navigation tool throughout the app.</p>
                 <h2>Some Backend Code</h2>
                 <div className="codeBox">
-                <FileInput filepath="backendosp.txt"/>
+                <FileInput filepath="cason-coding-portfolio/backendosp.txt"/>
                 </div>
                 <p>This function finds the nearest stops based on coordinates </p>
             </div>

@@ -30,12 +30,12 @@ export default function RelationalAlgebra() {
         <div id="codeSection">
             <h2>Select Method</h2>
             <div className="codeBox">
-            <FileInput filepath="selectRelationalAlgebra.txt"/>
+            <FileInput filepath="cason-coding-portfolio/selectRelationalAlgebra.txt"/>
             </div>
             <p>Selects all rows from table that match predicate supplied.</p>
             <h2>Example from Driver</h2>
             <div className="codeBox">
-            <FileInput filepath="driverRelationalAlgebra.txt"/>
+            <FileInput filepath="cason-coding-portfolio/driverRelationalAlgebra.txt"/>
             </div>
             <p>One of the example queries we need to create for the demo of project</p>
         </div>

@@ -13,7 +13,7 @@ export default function Root() {
 
     const handleEnterSite = () => {
         setWelcomeShown(false);
-        navigate('/about-me');
+        navigate('/cason-coding-portfolio/about-me');
     };
 
 
@@ -32,19 +32,19 @@ export default function Root() {
 
             <ul id="route-links">
                 <li>
-                    <Link to ={"/about-me"}><h1>About Me</h1></Link>
+                    <Link to ={"/cason-coding-portfolio/about-me"}><h1>About Me</h1></Link>
                 </li>
                 <li>
-                    <Link to ={'/resume'}><h1>Resume</h1></Link>
+                    <Link to ={'/cason-coding-portfolio/resume'}><h1>Resume</h1></Link>
                 </li>
                 <li>
-                    <Link to ={'/projects'}><h1>Projects</h1></Link>
+                    <Link to ={'/cason-coding-portfolio/projects'}><h1>Projects</h1></Link>
                 </li>
                 <li>
-                    <Link to ={'/blog'}><h1>Blog</h1></Link>
+                    <Link to ={'/cason-coding-portfolio/blog'}><h1>Blog</h1></Link>
                 </li>
                 <li>
-                    <Link to ={'/links'}><h1>Links</h1></Link>
+                    <Link to ={'/cason-coding-portfolio/links'}><h1>Links</h1></Link>
                 </li>
             </ul>
         </div>

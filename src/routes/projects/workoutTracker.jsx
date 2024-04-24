@@ -28,12 +28,12 @@ export default function WorkoutTracker() {
             <div id="codeSection">
                 <h2>Some Frontend Code</h2>
                 <div className="codeBox">
-                <FileInput filepath="workoutfrontend.txt"/>
+                <FileInput filepath="cason-coding-portfolio/workoutfrontend.txt"/>
                 </div>
                 <p>This function creates a workout card to be display on the users main page.</p>
                 <h2>Some Backend Code</h2>
                 <div className="codeBox">
-                <FileInput filepath="workoutbackend.txt"/>
+                <FileInput filepath="cason-coding-portfolio/workoutbackend.txt"/>
                 </div>
                 <p>Some axios statements that showcase the useEffect() Hook</p>
             </div>

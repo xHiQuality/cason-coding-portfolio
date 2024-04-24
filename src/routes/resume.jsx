@@ -10,7 +10,7 @@ export default function Resume() {
             <div id='resume-section'>
                 <p>
                     Below is my updated resume, feel free to download it & if you have any questions shoot me an  
-                    &nbsp;<Link to={'/links'}>email</Link>.
+                    &nbsp;<Link to={'/cason-coding-portfolio/links'}>email</Link>.
                 </p>
                 <embed src={resume} width="100%" height="100%" />
             </div>

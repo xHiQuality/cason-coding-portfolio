@@ -30,12 +30,12 @@ export default function Portfolio() {
         <div id="codeSection">
             <h2>Project Card Component</h2>
             <div className="codeBox">
-            <FileInput filepath="portfoliocode.txt"/>
+            <FileInput filepath="cason-coding-portfolio/portfoliocode.txt"/>
             </div>
             <p>This is the reuseable component that creates all of the Cards on the left side of the page. Using props, I am able to stay DRY(Don't Repeat Yourself)!</p>
             <h2>Function for Reading From File</h2>
             <div className="codeBox">
-            <FileInput filepath="filereader.txt"/>
+            <FileInput filepath="cason-coding-portfolio/filereader.txt"/>
             </div>
             <p>By using useEffect and useState, I am able to read the code inside the required text file and keep good format.</p>
         </div>

@@ -21,55 +21,54 @@ import WorkoutTracker from "./routes/projects/workoutTracker";
 
 const router = createBrowserRouter([
   {
-    basename: "/cason-coding-portfolio/",
-    path: "/",
+    path: "/cason-coding-portfolio",
     element: <Root/>,
     errorElement: <ErrorPage/>,
     children: [
           {
-            path: "/about-me",
+            path: "/cason-coding-portfolio/about-me",
             element: <AboutMe/>
           },
           {
-            path: "/resume",
+            path: "/cason-coding-portfolio/resume",
             element: <Resume/>
           },
           {
-            path: "/projects",
+            path: "/cason-coding-portfolio/projects",
             element: <Projects/>,
             children: [
               {
-                path: "/projects/acm-osp-2023",
+                path: "/cason-coding-portfolio/projects/acm-osp-2023",
                 element: <ACMOSP2023 />
               },
               {
-                path: "/projects/reddit-clone",
+                path: "/cason-coding-portfolio/projects/reddit-clone",
                 element: <RedditClone/>
               },
               {
-                path: "/projects/safetravels",
+                path: "/cason-coding-portfolio/projects/safetravels",
                 element: <SafeTravels />
               },
               {
-                path: "/projects/relational-algebra",
+                path: "/cason-coding-portfolio/projects/relational-algebra",
                 element: <RelationalAlgebra/>
               },
               {
-                path: "/projects/portfolio",
+                path: "/cason-coding-portfolio/projects/portfolio",
                 element: <Portfolio/>
               },
               {
-                path: "/projects/workout",
+                path: "/cason-coding-portfolio/projects/workout",
                 element: <WorkoutTracker/>
               }
             ]
           },
           {
-            path: "/blog",
+            path: "/cason-coding-portfolio/blog",
             element: <Blog />
           },
           {
-            path: "/links",
+            path: "/cason-coding-portfolio/links",
             element: <Links/>
           }
         
@@ -79,6 +78,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={router} basename="/cason-coding-portfolio"/>
   </React.StrictMode>
 );

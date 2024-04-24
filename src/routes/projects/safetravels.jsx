@@ -29,12 +29,12 @@ export default function SafeTravels() {
         <div id="codeSection">
             <h2>Some Frontend Code</h2>
             <div className="codeBox">
-            <FileInput filepath="safetravelsfrontend.txt"/>
+            <FileInput filepath="cason-coding-portfolio/safetravelsfrontend.txt"/>
             </div>
             <p>This code shows the creation of the homepage of the mobile app</p>
             <h2>Some Backend Code</h2>
             <div className="codeBox">
-            <FileInput filepath="safetravelsbackend.txt"/>
+            <FileInput filepath="cason-coding-portfolio/safetravelsbackend.txt"/>
             </div>
             <p>
             Logic for parsing the API and gathering required data
