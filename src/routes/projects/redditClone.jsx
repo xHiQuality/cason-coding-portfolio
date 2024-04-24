@@ -1,5 +1,4 @@
 import '../../css/projecthighlight.css';
-import FileInput from "../../utility/fileInput";
 
 export default function RedditClone() {
     const backendReddit = `

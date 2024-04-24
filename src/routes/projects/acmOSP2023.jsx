@@ -1,5 +1,5 @@
 import "../../css/projecthighlight.css";
-import FileInput from "../../utility/fileInput";
+
 
 export default function ACMOSP2023() {
     const kotlinOSP = `

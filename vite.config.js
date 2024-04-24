@@ -4,10 +4,6 @@ import string from 'vite-plugin-string'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-  string({
-    include: "**/*.txt"
-  })],
+  plugins: [react()],
   base: '/cason-coding-portfolio'
 })
