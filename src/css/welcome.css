@@ -50,3 +50,13 @@ html, body {
     color: #fff;
     box-shadow: 0 0 15px rgba(255,127,80,0.75);
 }
+
+
+.welcome-screen h4 {
+    color: #FF7F50;
+    background-color: white;
+    border: #56a3e2 solid 1px;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}

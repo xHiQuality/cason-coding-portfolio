@@ -8,8 +8,9 @@ export default function AboutMe() {
         <div className='aboutme'>
         <div id="general-info">
             
-            <h1 id='name'>Hey there!</h1>
+            
             <div id='text-about-me'>
+            <h1 id='name'>Hey there!</h1>
             <p>
             I'm Cason Pittman, a dedicated Computer Science student from the University of Georgia, set to graduate in December 2024. With a solid foundation in programming and software development, I've successfully led and contributed to several collaborative projects that enhance everyday university life and beyond.
             </p>
