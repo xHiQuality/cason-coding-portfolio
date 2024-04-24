@@ -72,13 +72,14 @@ const router = createBrowserRouter([
             element: <Links/>
           }
         
-    ]
+    ],
+    basename: '/cason-coding-portfolio'
   }
 ]);
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} basename='/cason-coding-portfolio'/>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
