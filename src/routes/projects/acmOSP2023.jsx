@@ -2,7 +2,67 @@ import "../../css/projecthighlight.css";
 import FileInput from "../../utility/fileInput";
 
 export default function ACMOSP2023() {
+    const kotlinOSP = `
+    fun NavBar(items: List<NavBarItem>, navController: NavController, 
+        modifier: Modifier = Modifier, onItemClick: (NavBarItem) -> Unit) {
+        val backStackEntry = navController.currentBackStackEntryAsState()
+        BottomNavigation(
+            modifier = modifier,
+            backgroundColor = BusAppTheme.colors.container,
+            elevation = 5.dp
+        ) {
+            items.forEach { item ->
+                val selected = item.route == backStackEntry.value?.destination?.route
+                BottomNavigationItem(
+                    selected = selected,
+                    selectedContentColor = BusAppTheme.colors.positiveStatus,
+                    unselectedContentColor = BusAppTheme.colors.onBackgroundSecondary,
+                    onClick = { onItemClick(item) },
+                    icon = {
+                        Column(horizontalAlignment = CenterHorizontally) {
+                            if (item.badgeCount > 0) {
+                                BadgedBox(badge = 
+                                { Badge { Text(item.badgeCount.toString()) } }) {
+                                    Icon(
+                                        imageVector = item.icon,
+                                        contentDescription = item.name
+                                    )
+                                }
+                            } else {
+                                Icon(imageVector = item.icon, contentDescription = item.name)
+                            }
+                            if (selected) {
+                                Text(
+                                    text = item.name,
+                                    textAlign = TextAlign.Center,
+                                    fontSize = 10.sp
+                                )
+                            }
+                        }
+                    }
+                )
+            }
+        }
+    }
+    `;
 
+    const backendOSP = `
+    public Stop getNearestStop(double latitude, double longitude) {
+        Stop[] nearestStops = DatabaseService.getNearbyStops(latitude, longitude, DatabaseService.stopCount());
+
+        // Determine the first stop on nearestStops that serves this Route
+        Stop nearestStopOnRoute = null;
+        int i = 0;
+        while (nearestStopOnRoute == null && i < nearestStops.length) {
+            if (Arrays.stream(nearestStops[i].getServesRoutesIds()).anyMatch(id -> id == this.routeId)) {
+                nearestStopOnRoute = nearestStops[i];
+            }
+            i++;
+        }
+
+        return nearestStopOnRoute;
+    }
+    `;
 
     return (
         <div id="projectHighlight">
@@ -25,12 +85,12 @@ export default function ACMOSP2023() {
             <div id="codeSection">
                 <h2>Some Frontend Code</h2>
                 <div className="codeBox">
-                <FileInput filepath="cason-coding-portfolio/kotlinosp.txt"/>
+                {kotlinOSP}
                 </div>
                 <p>One of our members with guidance from me was able to put together this nav bar which serves as a navigation tool throughout the app.</p>
                 <h2>Some Backend Code</h2>
                 <div className="codeBox">
-                <FileInput filepath="cason-coding-portfolio/backendosp.txt"/>
+                {backendOSP}
                 </div>
                 <p>This function finds the nearest stops based on coordinates </p>
             </div>

@@ -3,6 +3,98 @@ import FileInput from "../../utility/fileInput";
 
 export default function WorkoutTracker() {
 
+    const frontend = `
+    const Workout = (props, key) => {
+        const [isFormVisible, setIsFormVisible] = useState(false);
+      
+        const showFormHandler = () => {
+          setIsFormVisible(true)
+        }
+        
+        const closeFormHandler = () => {
+          setIsFormVisible(false)
+        }
+      
+        const navigate = useNavigate();
+        const deleteHandler = (id) => {
+          console.log(id);
+          axios
+            .delete(http://localhost:4000/api/exercises/{props.id})
+            .then((res) => {
+              navigate('/user-auth');
+            })
+            .catch((err) => {
+              console.log("Error from Workout Delete click");
+            });
+            window.location.reload()
+        };
+        
+        return (
+          <Card className="custom-card">
+             <Card.Img
+              variant="top"
+              src={props.image}
+              className="card-image"
+            />
+            
+            <Card.Body>
+              <li key={key} className="user-item">
+              <img src={props.img} alt=''></img>
+                <Card.Title>Exercise: {props.exercise}</Card.Title>
+                <Card.Text>
+                  <h3>Workout: {props.workout}</h3>
+                  <h3>Calories: {props.calories}</h3>
+                  
+                  {window.location.pathname === '/user-auth' && (
+                    <div className="button-container">
+                 
+      
+                        <button type="submit" className="edit-button" onClick={showFormHandler}>Edit</button>
+                        
+                
+                        <button type='submit' className='delete-button' onClick={() => { deleteHandler(props.id)}}>
+                          Delete
+                        </button>
+                      
+                    </div>
+                  )}
+                  
+                </Card.Text>
+              </li>
+            </Card.Body>
+            {isFormVisible && <EditFormExercise id={props.id} name={props.name} workout={props.workout} calories={props.calories} img={props.img}/>}
+            {isFormVisible && <button id="go-back" onClick={closeFormHandler}>Go Back</button>}
+          </Card>
+          
+        );
+      };
+      
+      export default Workout;
+    `;
+
+    const backend = `
+    useEffect(() => {
+        axios
+          .get('http://localhost:4000/api/foods')
+          .then((res) => {
+            setFoods(res.data);
+          })
+          .catch((err) => {
+            console.log(err)
+          });
+     }, []);
+     
+     useEffect(() => {
+        axios
+          .get('http://localhost:4000/api/exercises')
+          .then((res) => {
+            setExercises(res.data);
+          })
+          .catch((err) => {
+            console.log(err);
+          })
+      }, []);
+    `;
 
     return (
         <div id="projectHighlight">
@@ -28,12 +120,12 @@ export default function WorkoutTracker() {
             <div id="codeSection">
                 <h2>Some Frontend Code</h2>
                 <div className="codeBox">
-                <FileInput filepath="cason-coding-portfolio/workoutfrontend.txt"/>
+                {frontend}
                 </div>
                 <p>This function creates a workout card to be display on the users main page.</p>
                 <h2>Some Backend Code</h2>
                 <div className="codeBox">
-                <FileInput filepath="cason-coding-portfolio/workoutbackend.txt"/>
+                {backend}
                 </div>
                 <p>Some axios statements that showcase the useEffect() Hook</p>
             </div>

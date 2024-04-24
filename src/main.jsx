@@ -21,7 +21,7 @@ import WorkoutTracker from "./routes/projects/workoutTracker";
 
 const router = createBrowserRouter([
   {
-    path: "/cason-coding-portfolio",
+    path: "cason-coding-portfolio/",
     element: <Root/>,
     errorElement: <ErrorPage/>,
     children: [
@@ -76,8 +76,9 @@ const router = createBrowserRouter([
   }
 ]);
 
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} basename="/cason-coding-portfolio"/>
+    <RouterProvider router={router} basename='/cason-coding-portfolio'/>
   </React.StrictMode>
 );
