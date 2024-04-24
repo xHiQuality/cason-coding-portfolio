@@ -15,7 +15,7 @@ export default function AboutMe() {
             I'm Cason Pittman, a dedicated Computer Science student from the University of Georgia, set to graduate in December 2024. With a solid foundation in programming and software development, I've successfully led and contributed to several collaborative projects that enhance everyday university life and beyond.
             </p>
             <p>
-            My academic journey is highlighted by my active participation in the Association for Computing Machinery (ACM) club, where I've served as the Community Engagement Chair and led an open-source initiative to develop an improved UGA Bus App. This project not only enhanced my leadership skills but also deepened my expertise in front-end development using Jetpack Compose and project management. 
+            My academic journey is highlighted by my active participation in the Association for Computing Machinery (ACM) club, where I've served as the Community Engagement Chair and led an open-source initiative to develop an improved UGA Bus App. This project not only enhanced my leadership skills but also deepened my expertise in front-end development using Jetpack Compose and as well as project management. 
             </p>
             <p>
             I'm proficient in a variety of programming languages including Java, JavaScript, and React, and I'm familiar with tools like Android Studio, VS Code, Eclipse, MySQL Workbench and Git. My project experience is diverse, ranging from creating a relational algebra engine in Java to developing this website using React.js and MySQL. Each project has bolstered my understanding of critical concepts like API integration, data structures, and user interface design.
