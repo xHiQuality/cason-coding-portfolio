@@ -1,4 +1,5 @@
 import "../../css/projecthighlight.css";
+import { Link } from "react-router-dom";
 
 
 export default function ACMOSP2023() {
@@ -64,8 +65,10 @@ export default function ACMOSP2023() {
     }
     `;
 
+
     return (
         <div id="projectHighlight">
+            <Link to='../' id="x-button">X</Link>
             <div id="titleSection">
             <h1>UGA Bus App &#128054;&#128652;</h1>
             <h3>ACM Open Source Club (Frontend Lead)</h3>

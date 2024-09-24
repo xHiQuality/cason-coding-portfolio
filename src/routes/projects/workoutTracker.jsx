@@ -1,4 +1,5 @@
 import "../../css/projecthighlight.css";
+import { Link } from "react-router-dom";
 
 export default function WorkoutTracker() {
 
@@ -97,6 +98,7 @@ export default function WorkoutTracker() {
 
     return (
         <div id="projectHighlight">
+          <Link to='../' id="x-button">X</Link>
             <div id="titleSection">
             <h1>Workout Tracker + &#127947;&#65039;&#8205;&#9794;&#65039;</h1>
             <h3>Web Development (CSCI 4300)</h3>

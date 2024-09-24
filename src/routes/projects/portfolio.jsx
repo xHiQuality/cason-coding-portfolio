@@ -1,5 +1,5 @@
 import "../../css/projecthighlight.css";
-
+import { Link } from "react-router-dom";
 
 
 export default function Portfolio() {
@@ -30,6 +30,7 @@ export default function Portfolio() {
 
     return (
         <div id="projectHighlight">
+        <Link to='../' id="x-button">X</Link>
         <div id="titleSection">
         <h1>Cason's Coding e-Portfolio &#128421;&#65039;</h1>
         <h3>Personal Project</h3>

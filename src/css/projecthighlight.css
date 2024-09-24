@@ -1,18 +1,35 @@
 #projectHighlight {
-    position: absolute;
+    position: relative;
     background-color: #f5f5f5;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     font-family: 'Courier New', monospace;
     padding: 0 10px;
     margin-bottom: 10px;
     margin-right: 2%;
-    max-width: 40vw; /* Restricts width to 30% of the viewport width */
+    margin-top: 30px;
+    max-width: 40vw;
+
+    @media (max-width: 1150px) {
+        grid-template-columns: repeat(1, 1fr); 
+        width: 120%;
+        column-gap: 5%;
+        margin-left: 0px;
+    }
+
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr; 
+        width: 100vw - 10px;
+        height: auto; 
+    }
+     /* Restricts width to 30% of the viewport width */
 }
 
 #codeSection {
     font-family: 'Courier New', monospace;
     color: #ac6247;
 }
+
+
 
 .codeBox {
     background-color: #eeeaea;
@@ -41,7 +58,8 @@
 }
 
 #projectHighlight a:hover {
-    background-color: #0056b3;
+    background-color: red;
 }
+
 
 

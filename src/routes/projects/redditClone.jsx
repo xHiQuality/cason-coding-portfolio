@@ -1,4 +1,5 @@
 import '../../css/projecthighlight.css';
+import { Link } from "react-router-dom";
 
 export default function RedditClone() {
     const backendReddit = `
@@ -96,8 +97,9 @@ export default function RedditClone() {
 
     return (
         <div id="projectHighlight">
+          <Link to='../' id="x-button">X</Link>
             <div id="titleSection">
-            <h1>Reddit Clone 📱</h1>
+            <h1>DawgIt 📱</h1>
             
             <h3>Software Engineering (CSCI 4050)</h3>
             </div>
@@ -106,7 +108,7 @@ export default function RedditClone() {
                     Description
                 </h2>
                 <p>
-                Me and four other students were assigned a semester long project where we chose to create a Reddit&#174;&#65039; clone.
+                Me and four other students were assigned a semester long project where we chose to create a Reddit&#174;&#65039; type social media platform.
                 Through using a framework of: React.js,Node.js, and MySQL, we created a CRUD application that simulates (to the best of our ability, and time constraints) the actual product.
                 Users can sign up, edit their profile, post, comment, upvote, etc. I was personally responsible for setting up the backend as well as the database.
                 I created various methods for contacting the database and tested them using Postman, this was my most complicated yet exciting group project I have faced.

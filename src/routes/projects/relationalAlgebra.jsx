@@ -1,5 +1,5 @@
 import "../../css/projecthighlight.css";
-
+import { Link } from "react-router-dom";
 
 export default function RelationalAlgebra() {
 
@@ -107,6 +107,7 @@ export default function RelationalAlgebra() {
 
     return (
         <div id="projectHighlight">
+        <Link to='../' id="x-button">X</Link>
         <div id="titleSection">
         <h1>Relational Algebra Engine &#129518;</h1>
         <h3>Database Management (CSCI 4370)</h3>

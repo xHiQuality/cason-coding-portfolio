@@ -1,4 +1,5 @@
 import "../../css/projecthighlight.css";
+import { Link } from "react-router-dom";
 
 export default function SafeTravels() {
 
@@ -249,6 +250,7 @@ Future<CountryInfo> getCountryInfo(String country) async {
 
     return (
         <div id="projectHighlight">
+          <Link to='../' id="x-button">X</Link>
         <div id="titleSection">
         <h1>SafeTravels &#9992;&#65039;</h1>
         <h3>UGA Hacks 8</h3>
